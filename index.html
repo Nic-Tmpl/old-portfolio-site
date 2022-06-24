@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temple Portfolio</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/0729eaf631.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <script src="message_script.js"></script>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <nav class="desktop">
+                <div class="content">
+                    <h2 id="logo">Nic Temple</h2>
+                    <ul class="nav-bar">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="fortunepage.html">Fortune Teller</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="mobile">
+                <h2 id="logo">Nic Temple</h2>
+                <input class="menu-btn" type="checkbox" id="menu-btn"/>
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="fortunepage.html">Fortune Teller</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                 </ul>
+            </nav>            
+        </header>
+        <main>
+            <div class="box">
+                <div id="container">
+                   <div class="about-box">
+                     <!--About Section-->
+                     <section id="about-me">
+                        <div class="about-text">
+                            <h2>About</h2>
+                            <p>Hello! I'm a pianist and writer transitioning to software since mid-2021. 
+                                I started out by working through the old K&R C language book, 
+                                and am now on a full-stack development course. I still do play music! 
+                                Check the contact page for a link to my YouTube channel.
+                                Projects here will be updated as I finish up more interesting things. 
+                                For now, go get your fortune told by following the link.</p>
+                            <br>
+                            <span id="day-name"></span>
+                        </div>
+                        <img src="./resources/images/about-image.jpg" id="about-image">
+                    </section>
+                    <!--Projects Section-->
+                    <section id="projects">
+                        <h2>Projects</h2>
+                        <details class="project">
+                            <summary class="project-title">
+                             <h3>Dadaist Fortune Teller</h3>
+                            </summary>
+                            <img src="./resources/images/fortune-teller.jpg" alt="picture of project" 
+                            class="project-image">
+                            <p class="project-description">
+                                A JS script that pairs a random image with fortunes of increasing strangeness...
+                             </p>
+                        </details>
+                        <details class="project">
+                            <summary class="project-title">
+                             <h3>Ashland Lindy Swing Society Website</h3>
+                            </summary>
+                            <img src="./resources/images/Alss-website.jpg" alt="website of lindy swing society"
+                            class="project-image"> 
+                         <p class="project-description">
+                              A website made for the Ashland Lindy Swing Society of Ashland, Oregon.
+                         </p>
+                        </details> 
+                    </section>                   
+                     <!--Languages Section-->
+                    <section id="languages">
+                        <h2>Languages Studied</h2>
+                        <i class="fab fa-html5 fa-2x"></i>
+                        <i class="fab fa-css3-alt fa-2x"></i>
+                        <i class="fab fa-js fa-2x"></i>
+                        <i class="fa-solid fa-c fa-2x"></i>
+                    </section>
+                  </div>
+         </main>
+        <!--Footer-->
+        <footer>
+            <div class="content">
+                <p>&copy 2022 Nic Temple</p>
+            </div>
+        </footer>
+    </body>
+</html>

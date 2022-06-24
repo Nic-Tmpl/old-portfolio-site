@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset ="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Temple Portfolio</title>
+            <link rel="stylesheet" href="style.css" type="text/css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+            <script src="message_script.js"></script>
+        </head>
+    
+        <body>
+            <!--Header-->
+            <header>
+                <nav class="desktop">
+                    <div class="content">
+                        <h2 id="logo">Nic Temple</h2>
+                        <ul class="nav-bar">
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="fortunepage.html">Fortune Teller</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="mobile">
+                    <h2 id="logo">Nic Temple</h2>
+                    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="fortunepage.html">Fortune Teller</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                </nav>            
+            </header>
+            <!--Main section-->
+            <main> 
+                <div class="box">
+                    <div id="container">
+                        <img src="./resources/images/photo-array/photo8.jpg" id="background-image">
+                        <div id="fortune"></div>
+                    </div>
+                    <div id="btn-box">
+                        <button type="button" id="trigger" onclick="message()">Give Me Fortune</button>
+                    </div>
+                </div>
+            </main>
+        <!--Footer-->
+        <footer>
+            <div class="content">
+                <p>&copy 2022 Nic Temple</p>
+            </div>
+        </footer>
+    </body>
+</html>

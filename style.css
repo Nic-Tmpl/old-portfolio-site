@@ -1,0 +1,387 @@
+/* Universal Styles */
+html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    background-color:#373a36
+}
+
+body {
+    margin: 0px;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: none;
+}
+  
+a:active {
+    text-decoration: underline;
+}
+
+.box {
+    width: 70%;
+    background-color: #e6e2dd;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/*header */
+header {
+    position: static;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #d48166;
+    color: white;
+    line-height: 1.2;
+
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+header #logo {
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+header .desktop ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header .desktop li {
+    padding-left: 3rem;
+}
+
+header a {
+    vertical-align: bottom;
+    font-size: 1.5rem;
+    color: white;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        background-color:#d48166;
+        position: static;
+        display: block;
+        width: 100%;
+        z-index: 3;
+      }
+      
+       header .mobile ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color:#373a36;
+      }
+      
+        header .mobile li a {
+        display: block;
+        padding: 1.2rem;
+        border-right: 1px solid white ;
+        text-decoration: none;
+      }
+      
+      .mobile li a:hover {
+        background-color: white;
+      }
+      
+      .mobile #logo {
+        display: block;
+        float: left;
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        flex: 1;
+      }
+      
+       .mobile .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+      }
+
+       .mobile .menu-icon {
+        cursor: pointer;
+       /* display: inline-block;*/
+        float: right;
+        padding: 2rem 1.5rem;
+        position: relative;
+        user-select: none;
+      }
+      
+       .mobile .menu-icon .navicon {
+        background: white;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 1.1rem;
+      }
+      
+       .mobile .menu-icon .navicon:before,
+       .mobile .menu-icon .navicon:after {
+        background: white;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+      
+       .mobile .menu-icon .navicon:before {
+        top: 5px;
+      }
+      
+      .mobile .menu-icon .navicon:after {
+        top: -5px;
+      }
+
+       .mobile .menu-btn {
+        display: none;
+      }
+      
+       .mobile .menu-btn:checked ~ .menu {
+        max-height: 240px;
+      }
+      
+       .mobile .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+      }
+      
+       .mobile .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+      }
+      
+       .mobile .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+      }
+      
+       .mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+       .mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+      }
+}
+
+/*About page styles */
+#about-image {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 3vmin;
+}
+
+.about-box {
+    position: relative;
+    background-color: #e6e3dd;
+    margin: 1rem;
+    color:#373a36
+}
+
+.about-box h2 {
+    font-size: 2rem;
+}
+
+section {
+    text-align: left;
+}
+
+#about-me {
+    display: flex;
+}
+
+.about-text {
+    padding: 2rem;
+}
+
+details {
+    cursor: pointer;
+}
+
+::marker {
+    color:#373a36;
+}
+
+.project-image {
+    max-width: 60%;
+}
+
+.project-title h3 {
+    display: inline;
+    color:#373a36;
+}
+
+.project-description {
+    color:#373a36;
+    font-size: 1rem;
+}
+
+#languages i {
+    display: inline-flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    color:#d48166;
+}
+
+@media only screen and (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+
+    #about-me {
+    flex-direction: column;
+    }
+
+    .about-text {
+        padding: 0rem;
+    }
+
+    #about-image {
+       max-width: 60vmin;
+       align-self: center;
+    }
+
+    .project-image {
+        max-width: 60vmin;
+        align-self: center;
+    }
+}
+
+/*Fortune page styles */
+#background-image {
+    max-width: 60%;
+    height: auto;
+}
+
+#fortune {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 2rem;
+    width: 54%;
+    background-color: black;
+    color: white;
+    opacity: 0.8
+}
+
+#btn-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    background-color: #d48166;
+    color: white;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+button:active {
+    background-color: #373a36;
+    color: white;
+}
+
+footer .content {
+    justify-content: center;
+    color: white;
+
+}
+
+@media only screen and (max-width: 768px) {
+    #background-image {
+        max-width: 80vmin;
+    }
+
+    #fortune {
+        font-size: 1.5rem;
+        width: 80vmin;
+    }
+}
+
+/*Contact page styles */
+.contact-box {
+    position: relative;
+    background-color: #e6e3dd;
+    display: inline-flex;
+    width: 100%;
+    margin: 1rem;
+}
+
+.contact-text {
+    padding: 2rem;
+
+}
+.contact-text h2 {
+    font-size: 2.5rem;
+    color:#373a36;
+}
+
+.contact-text p {
+    font-size: 1.5rem;
+    color: #373a36
+}
+
+.contact-text i {
+    color:#d48166;
+}
+
+#contact-image {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 3vmin;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .contact-text {
+        padding: 0rem;
+    }
+
+    #contact-image {
+        max-width: 60vmin;
+        object-fit: contain;
+        border-radius: 3vmin;
+        align-self: center;
+    }
+}

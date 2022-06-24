@@ -1,0 +1,17 @@
+CURRENT COLORSET:
+
+#d48166 - peach
+#373a36 - charcoal gray
+#e6e2dd - off-white/light gray
+Text - usually white
+
+
+other ideas:
+
+#F7F4E9 - off-white
+#E40C2B - red for highlight
+#1D1D2C - dark navy blue for backgrounds
+#3CBCC3 - brighter blue
+
+#A0AECD - dry blue
+black
